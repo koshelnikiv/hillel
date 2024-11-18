@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        button {
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            border-style: hidden;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            text-align: left;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<h1></h1>-->
+    <form action="#">
+        <fieldset style="text-align: center; border-style: none; width:300px; left: 100px;">
+            <button type="button" style="text-align: right;background-color: white; border-style: hidden;">
+                <img src="img/Frame.svg" alt="close">
+            </button>
+
+            <Table style="width:300px; left: 100px;">
+                <tbody>
+                    <tr>
+                        <td><button type="button"
+                            style="width: 150px; background-color: white; border-style: hidden; text-align: right;">Login</button>
+                        </td>
+                        <td style="border-left-style: solid;"><button type="button"
+                            style="width: 150px; background-color: white; color: green; border-style: hidden; text-align: left;">Register</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </Table>
+
+            <p style="text-align: left;">Enter your email and password to register</p>
+            <p><input type="text" placeholder="Username" name="Username" required></p>
+            <p><input type="email" placeholder="Enter your email address" name="email" required></p>
+            <p><input type="password" placeholder="Password" name="password" required
+                    style="position: relative;">
+                <button type="button"
+                    style="background-color: white; border-style: hidden; text-align: right; position: absolute; z-index:-1; width:300px; left:70px;"><img
+                        src="img/Hide.svg" alt="Hide"></button>
+            </p>
+            <p><input type="password" placeholder="Confirm Password" name="cpassword" required>
+            </p>
+            <p><button type="submit" style="background-color: green; color: white;">Register</button>
+            </p>
+            <fieldset
+                style="text-align: center; border-top: solid; border-left: none; border-bottom: none; border-right: none; width:300px;">
+                <legend>Or register with</legend>
+                <p><button type="button"><img src="img/google.svg" alt="google">Continue with Google</button></p>
+                <p><button type="button"><img src="img/facebook.svg" alt="facebook">Continue with Facebook</button></p>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+
+</html>
