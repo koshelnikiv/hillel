@@ -13,8 +13,8 @@
 }
 
 .wrapper {
-    width: 1440px;
-    padding: 0px 135px 0px 105px;
+    width: 1200px;
+    padding: 0px auto;
 }
 
 .menu {
