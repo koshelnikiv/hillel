@@ -88,7 +88,7 @@
     color: #3D3D3D;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
     margin-right: 50px;
     text-decoration: none;
@@ -97,6 +97,7 @@
 }
 
 .menu a:hover {
+    font-weight: 700;
     border-bottom: 3px solid #46A358;
 
 }
@@ -112,6 +113,10 @@
     margin-right: 30px;
 }
 
+.loupe-link:hover path {
+    fill: #46A358;
+}
+
 .basket-link {
     width: 24px;
     height: 24px;
@@ -120,17 +125,24 @@
     position: relative;
 }
 
+.basket-link:hover path {
+    fill: #46A358;
+}
+
 .basket-qty {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     color: #FFF;
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     background-color: #46A358;
+    border: solid 2px #FFF;
     border-radius: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: -5px;
     top: 2px;
@@ -145,7 +157,6 @@
     background: #46A358;
     text-decoration: none;
     display: flex;
-    vertical-align: top;
     height: 35px;
 }
 
@@ -175,7 +186,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-    /* 114.286% */
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-top: 68px;
@@ -189,7 +199,6 @@
     font-style: normal;
     font-weight: 900;
     line-height: 70px;
-    /* 100% */
     text-transform: uppercase;
     margin-left: 40px;
     margin-bottom: 7px;
@@ -340,15 +349,15 @@
 .goods-box {
     width: 33.333%;
     padding: 0 10px 70px;
-    border-top: solid 1px transparent;
-}
-
-.goods-box:hover {
-    border-top: solid 1px #46A358;
 }
 
 .goods-item {
     background-color: #fff;
+    border-top: solid 1px transparent;
+}
+
+.goods-item:hover {
+    border-top: solid 1px #46A358;
 }
 
 .goods-img {
@@ -488,21 +497,26 @@
 
 .find-box {
     display: flex;
-    margin: 100px -20px 138px;
+    margin: 100px -12px 138px;
+}
+
+.find-items {
+    width: 50%;
+    padding: 0 12px;
 }
 
 .find-item {
-    width: 50%;
-    padding: 0 20px;
     display: flex;
+    justify-content: space-between;
+    background-color: #FBFBFB;
+    height: 100%;
 }
 
 .find-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FBFBFB;
-    margin: 0;
+    margin: auto 0;
 }
 
 .find-img img {
@@ -583,9 +597,17 @@
     margin: 0 -10px;
 }
 
-.blog-item {
+.blog-items {
     width: 25%;
     padding: 0 10px;
+}
+
+.blog-item {
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .blog-item-img {
@@ -596,19 +618,19 @@
 }
 
 .blog-item-text {
-    background-color: #FBFBFB;
-    margin-left: 10px;
-    max-width: calc(100% - 20px);
-    padding: 11px 15px 17px;
+    padding: 15px 15px 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .blog-item-text h4 {
     color: #46A358;
     font-size: 14px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 16px;
-    margin: 4px 0;
+    margin: 0;
 }
 
 .blog-item-text h3 {
@@ -617,7 +639,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
-    margin: 4px 0;
+    margin: 5px 0;
 }
 
 .blog-item-text p {
@@ -627,21 +649,18 @@
     font-weight: 400;
     line-height: 22px;
     text-align: left;
-    margin: 4px 0;
-
+    margin: 5px 0;
 }
 
 .blog-item-text a {
     color: #3D3D3D;
     font-size: 14px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 16px;
     text-decoration: none;
-    vertical-align: bottom;
-    margin: 9px 0;
+    margin: 6px 0;
     display: flex;
-    padding: 0;
 }
 
 .blog-item-text a:hover {
