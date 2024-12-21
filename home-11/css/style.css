@@ -752,26 +752,31 @@
     margin: 0;
 }
 
-.footer-img {
-    display: block;
-}
-
-.footer-img_img1 {
+.footer-img1 {
     width: 74px;
     height: 93px;
     margin: -4px 0 0;
+    background-image: url(../img/footer1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.footer-img_img2 {
+.footer-img2 {
     width: 83px;
     height: 87px;
     margin: 0;
+    background-image: url(../img/footer2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
 
-.footer-img_img3 {
+.footer-img3 {
     width: 90px;
     height: 89px;
     margin: -2px 0 0;
+    background-image: url(../img/footer3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;        
 }
 
 .subscribe-item_end {
