@@ -767,7 +767,7 @@
     margin: 0;
     background-image: url(../img/footer2.svg);
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
 }
 
 .footer-img3 {
@@ -776,32 +776,11 @@
     margin: -2px 0 0;
     background-image: url(../img/footer3.svg);
     background-repeat: no-repeat;
-    background-size: cover;        
+    background-size: cover;
 }
 
 .subscribe-item_end {
-    display: flex;
-    flex-direction: column;
-    width: 33.333%;
-    height: 100%;
-}
-
-.subscribe-item_end h2 {
-    color: #3D3D3D;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
-    margin: 17px 0 9px;
-}
-
-.subscribe-item_end p {
-    color: #727272;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    margin: 0;
+    width: 33.334%;
 }
 
 .subscribe-email {
